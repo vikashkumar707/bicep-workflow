@@ -1,5 +1,5 @@
 param adminUsername string
-param location string = resourceGroup().location
+// param location string = resourceGroup().location
 @secure()
 param adminPassword string
 
@@ -27,7 +27,7 @@ output adminPassword string = adminPassword
 output  addressPrefix string =  addressPrefix
 // output vmNicName string = vmNicName
 // output vnetName string = vnetName
-output location string = location
+// output location string = location
 output subnetName string = subnetName
 output subnetAddressPrefix string = subnetAddressPrefix
 output vmSize string = vmSize

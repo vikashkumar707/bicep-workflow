@@ -1,5 +1,5 @@
 @description('Specifies the location for resources.')
-param location string = 'eastus'
+param location string = resourceGroup().location
 var vnetName = 'VK_vnet'
 var vmName = 'VK_VM1'
 var vmNicName = 'VK_VmNic'
@@ -11,7 +11,7 @@ module variables 'variables.bicep' = {
   params: {
     adminUsername: 'VikashKumar'
     adminPassword: 'Vikash123'
-    location: location
+    // location: location
     
   }
 }
