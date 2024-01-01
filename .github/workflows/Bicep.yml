@@ -38,10 +38,11 @@ jobs:
           creds: ${{secrets.AZURE_SPN_CREDENTIAL}}
 
       - name: az bicep Deploy
-        working-directory: '${{github.workspace}}/src/main.bicep'
+        # working-directory: '${{github.workspace}}/src/main.bicep'
+
         run:  |
          az deployment group create --resource-group VK_RG2 --template-file main.bicep 
-                
+        working-directory: ./src/main.bicep        
               
           
           
