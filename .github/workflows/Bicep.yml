@@ -42,7 +42,7 @@ jobs:
 
         run:  |
          az deployment group create --resource-group VK_RG2 --template-file main.bicep 
-        working-directory: ./src/main.bicep        
+        working-directory: src       
               
           
           
