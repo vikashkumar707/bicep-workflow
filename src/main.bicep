@@ -11,7 +11,7 @@ module variables 'variables.bicep' = {
   params: {
     adminUsername: 'VikashKumar'
     adminPassword: 'Vikash123'
-    // location: location
+   
     
   }
 }
